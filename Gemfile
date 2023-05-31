@@ -102,8 +102,14 @@ group :development, :test do
 end
 
 group :test do
-  gem "draft_matchers"#, "0.0.2"#path: "../../my_stuff/draft_matchers"
-  # gem "draft_matchers"
+  gem "draft_matchers"
   gem "rspec-html-matchers"
   gem "webmock"
 end
+
+# cron job for sample_data with whenever
+gem "whenever", require: false
+
+# for scraping imdb
+gem 'themoviedb-api'
+gem 'mechanize'
